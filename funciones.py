@@ -9,3 +9,4 @@ def potencia(base, exponente=2):
 print(potencia(3))  # 9 (3^2)
 print(potencia(2,4)) # 16 (2^4)
 
+
