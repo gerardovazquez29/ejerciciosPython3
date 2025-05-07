@@ -41,6 +41,13 @@ persona = {'nombre': 'Juan', 'edad': 35, 'ciudad': 'Juadalajara'}
 #*else :
 #*    print("Bucle terminado")    
 
+for i in range(3):  # Repite 3 veces
+    print("¡Amo Python! ") 
+# Salida:
+# ¡Amo Python! 
+# ¡Amo Python! 
+# ¡Amo Python! 
+
 
 #!while 
 contador = 0
@@ -70,4 +77,10 @@ while x < 10 and y > 0:
 #     print(x, y)
      x += 1
      y -= 1  # 0 5, 1 4, 2 3, 3 2, 4 1
+
+contador = 3
+while contador > 0:
+    print("¡Tiempo restante:", contador)
+    contador -= 1  # Resta 1 al contador
+# Salida: 3, 2, 1, ¡Despegue! 
 

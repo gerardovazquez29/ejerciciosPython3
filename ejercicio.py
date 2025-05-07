@@ -30,3 +30,48 @@ print(articulo["tags"]) # Salida: {'programación', 'tutorial', 'python', 'begin
 #* Coordenadas fijas (usando tupla)
 punto = (10, 20)
 print(f"X: {punto[0]}, Y: {punto[1]}")  # X: 10, Y: 20
+
+print('--------------------------------------')
+
+#!Juego Adivina el Número
+
+import random
+
+numero_secreto = random.randint(1, 5) # numero magico entre 1 y 5
+intento = int(input("Adivina el numero(1-5)"))
+if intento == numero_secreto:
+    print("Ganaste")
+else: 
+    print(f"Perdiste El numero era: {numero_secreto}")
+    
+print('--------------------------------------')
+
+
+#! Adivina el Color del Robot
+
+color_secreto = "azul"  
+intento = input("Adivina mi color (rojo/verde/azul): ")  
+
+if intento == color_secreto:  
+    print("¡Correcto! Soy azul como el cielo")  
+elif intento in ["rojo", "verde"]:  # elif al rescate  
+    print("Casi... ¡pero no!")  
+else:  
+    print("Ese color no existe en mi lista.")  
+
+print('--------------------------------------')
+
+#! El Robot Chef
+
+# Función normal con lambda y map  
+def hacer_pizza(ingredientes):  
+    preparar = lambda i: f" Añadir {i}"  
+    pasos = list(map(preparar, ingredientes))  
+    for paso in pasos:  
+        print(paso)  
+
+hacer_pizza(["queso", "tomate", "champiñones"])  
+# Salida:  
+# Añadir queso  
+# Añadir tomate  
+# Añadir champiñones 

@@ -17,7 +17,7 @@ colores = ("rojo", "verde", "azul")
 print(coordenadas[0])  # Salida: 4
 
 # Error al intentar modificar
-# coordenadas[0] = 10  # ¡Lanzará TypeError!
+coordenadas[0] = 10  # ¡Lanzará TypeError!
 
 #* Conjuntos(Sets)
 # Colección NO ordenada y SIN elementos duplicados
